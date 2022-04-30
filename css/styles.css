@@ -16,7 +16,7 @@
 }
 /*основы для body*/
 body{
-    font-family:'Roboto', sans-serif;
+    font-family:'Roboto',sans-serif;
     font-weight: 400;
    
     color: var(--text-color);
@@ -100,6 +100,7 @@ color:var(--titel-text-color) ;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
     
     color: var(--background-color);
     background-color: var(--accent-color);
@@ -157,3 +158,40 @@ color:var(--titel-text-color) ;
 .adress-footer{
     color: var(--background-color);
 }
+/*!!! ПОРТФОЛИО !!!*/
+
+/*Фильры*/
+.filter-btn{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    
+    color: var(--titel-text-color);
+    background-color: var(--background-second-color);
+    }
+    .filter-btn :hover{
+        color: var(--background-color);
+        background-color: var(--accent-color);
+    }
+    .filter-btn :focus {
+        color: var(--background-color);
+        background-color: var(--accent-color);
+    }
+    /*Галерея*/
+    .portfolio-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        
+        color:var(--titel-text-color)
+    }
+    .portfolio-text{
+        font-size: 16px;
+        line-height: 1,88;
+        letter-spacing: 0.03em;
+    }
