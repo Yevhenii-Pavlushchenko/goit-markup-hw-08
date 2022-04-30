@@ -1,57 +1,4 @@
-/*основы для body*/
-body{
-    font-family:'Roboto', sans-serif;
-    font-weight: 500;
-    
-    color: #757575;
-    background-color: #ffffff;
-}
-/*Логотип*/
-.logoweb{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-}
-.logoweb-header{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-}
-.logoweb-footer{
-    color: #ffffff;
 
-}
-/*navifation*/
-.navigation .link{
-font-size: 14px;
-line-height: 1,14;
-letter-spacing: 0.02em;  
-
-color:#212121 ;
-}
-.navigation a:hover,:focus {
-    color: #2196F3;
-}
-.list{
-    list-style: none;
-}
-.contacts a{
-    color: #757575;
-}
-.contacts a:hover{
-    color: #2196F3;
-}
-.contacts a:focus {
-    color: #2196F3;
-}
 /*основные цвета
 цвет основного текста #757575;
 цвет заголовков #212121
@@ -59,3 +6,154 @@ color:#212121 ;
 цвет футера и героя(фон) #2F303A;
 освновной фон белый цвет #ffffff; 
 фон наша команда #F5F4FA;*/
+:root{
+ --text-color:#757575;
+ --titel-text-color:#212121;
+ --accent-color:#2196F3;
+ --background-color:#FFFFFF;
+ --background-second-color:#f5f4fa;
+ --background-footer-color:#2f303a;
+}
+/*основы для body*/
+body{
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+   
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+/*убрать точки с li*/
+.list {
+    list-style-type: none;
+}
+/*Header*/
+/*Логотип*/
+.logoweb{
+  
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    
+    color: var(--accent-color);
+}
+.logoweb-header{
+   
+    color: var(--titel-text-color);
+}
+.logoweb-footer{
+    color: var(--background-color);
+
+}
+/*navigation*/
+.navigation .link{
+font-size: 14px;
+font-weight: 500;
+line-height: 1,14;
+letter-spacing: 0.02em;  
+text-decoration: none;
+
+color:var(--titel-text-color) ;
+}
+.navigation a:hover {
+    color: var(--accent-color);
+}
+.navigation a:focus {
+    color: var(--accent-color);
+}
+.contacts a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+}
+.contacts a:hover{
+    color: var(--accent-color);
+}
+.contacts a:focus {
+    color: var(--accent-color);
+}
+/*hero*/
+.hero{
+    background-color: var(--background-footer-color);
+}
+.main-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--background-color);
+}
+.order-service{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
+/*Секции*/
+/*Особенности */
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--titel-text-color);
+}
+.peculiarities .title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--titel-text-color);
+}
+.peculiaritiles-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/*Чем мы занимаемся*/
+/*Наша команада*/
+.section-team{
+    background-color:var(--background-second-color);
+}
+.team .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--titel-text-color);
+}
+.team .team-position{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+   
+    letter-spacing: 0.03em;
+    text-align: center
+}
+/*Footer*/
+.footer{
+    background-color: var(--background-footer-color);
+}
+.adress-footer{
+    color: var(--background-color);
+}
