@@ -17,7 +17,6 @@
 /*основы для body*/
 body{
     font-family:'Roboto',sans-serif;
-    font-weight: 400;
    
     color: var(--text-color);
     background-color: var(--background-color);
@@ -31,7 +30,6 @@ body{
 .logoweb{
   
     font-family: 'Raleway',sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -49,34 +47,34 @@ body{
 
 }
 /*navigation*/
-.navigation .link{
+.nav-link{
 font-size: 14px;
 font-weight: 500;
-line-height: 1,14;
+line-height: 1.14;
 letter-spacing: 0.02em;  
 text-decoration: none;
 
 color:var(--titel-text-color) ;
 }
-.navigation a:hover {
+.nav-link:hover {
     color: var(--accent-color);
 }
-.navigation a:focus {
+.nav-link:focus:focus {
     color: var(--accent-color);
 }
-.contacts a{
+.contacts-link{
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--text-color);
 }
-.contacts a:hover{
+.contacts-link:hover{
     color: var(--accent-color);
 }
-.contacts a:focus {
+.contacts-link:focus {
     color: var(--accent-color);
 }
 /*hero*/
@@ -116,11 +114,12 @@ color:var(--titel-text-color) ;
     
     color: var(--titel-text-color);
 }
-.peculiarities .title{
+.peculiarities-title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    list-style: none;
     
     color: var(--titel-text-color);
 }
@@ -144,7 +143,6 @@ color:var(--titel-text-color) ;
     color: var(--titel-text-color);
 }
 .team .team-position{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
    
@@ -157,6 +155,7 @@ color:var(--titel-text-color) ;
 }
 .adress-footer{
     color: var(--background-color);
+    font-style: normal;
 }
 /*!!! ПОРТФОЛИО !!!*/
 
@@ -173,21 +172,21 @@ color:var(--titel-text-color) ;
     color: var(--titel-text-color);
     background-color: var(--background-second-color);
     }
-    .filter-btn :hover{
+    .filter-btn:hover{
         color: var(--background-color);
         background-color: var(--accent-color);
     }
-    .filter-btn :focus {
+    .filter-btn:focus {
         color: var(--background-color);
         background-color: var(--accent-color);
     }
     /*Галерея*/
     .portfolio-title{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+   
+    letter-spacing: 0.06em;
         color:var(--titel-text-color)
     }
     .portfolio-text{
