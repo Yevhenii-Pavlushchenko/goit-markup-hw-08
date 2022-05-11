@@ -31,9 +31,19 @@ ul {
 }
 /*Выравнивание заголовков*/
 
-h1,h2,h3, h4,p{
+h1{
+margin: 0px;
+}
+h2{
     margin: 0px;
 }
+h3{
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+
 img{
     display: block;
     max-width: 100%;
@@ -156,6 +166,8 @@ color:var(--titel-text-color) ;
     letter-spacing: 0.06em;
     text-transform: uppercase;
      
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
     margin-top: 0px;
     
