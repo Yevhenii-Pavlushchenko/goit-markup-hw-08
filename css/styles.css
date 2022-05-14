@@ -13,6 +13,8 @@
  --background-color:#FFFFFF;
  --background-second-color:#f5f4fa;
  --background-footer-color:#2f303a;
+ --bacground-icon-color:#AFB1B8;
+ --bacgoround-social-color:rgba(255, 255, 255, 0.1);
 }
 /*СБРАСЫВАЕМ ТеГИ*/
 /*основы для body*/
@@ -140,21 +142,58 @@ color:var(--titel-text-color) ;
     color: var(--text-color);
 }
 
-
 .contacts-link:hover{
     color: var(--accent-color);
 }
 .contacts-link:focus {
     color: var(--accent-color);
 }
+.mail-icon {
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+
+.mail-icon:hover {
+    fill: var(--accent-color);
+}
+.mail-icon:focus {
+    fill: var(--accent-color);
+}
+
+.phone-icon {
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+.phone-icon:hover {
+    fill: var(--accent-color);
+}
+
+.phone-icon:focus {
+    fill: var(--accent-color);
+}
+
+
 /*hero*/
 .hero{
     text-align: center;
-    
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
     padding-top: 200px;
     padding-bottom: 200px;
     
+    background-image:linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),url(../images/title/hero.jpg);
     background-color: var(--background-footer-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
@@ -207,6 +246,29 @@ color:var(--titel-text-color) ;
 
 .section .item:not(:last-child){
     margin-right: 30px;
+}
+.container-icon{
+       display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        width: 270px;
+        height: 120px;
+        
+        padding-left: auto;
+        padding-right: auto;
+        margin-bottom: 30px;
+       
+        background-color:var(--background-second-color);
+        border-radius: 4px;
+}
+.peculiarities-icon{
+    
+   
+    
+    
+
+
 }
 .section-title{
     font-weight: 700;
@@ -302,10 +364,85 @@ margin: 30px 0px;
 .team .team-position{
     font-size: 16px;
     line-height: 1.18;
+
+    margin-bottom: 16px;
    
     letter-spacing: 0.03em;
     text-align: center
 }
+/*Social icons */
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.social-item:not(:last-child){
+    margin-right: 10px;
+   
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    width: 44px;
+    height: 44px;
+   
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.social-link:hover .social-icon{
+    fill: var(--background-color);
+}
+.social-link:focus .social-icon {
+    fill: var(--background-color);
+}
+.social-link:hover, :focus{
+    background-color: #2196F3;
+}
+.social-icon {
+    fill:var(--bacground-icon-color);
+}
+
+/*   Клиенты   */
+.clients-list{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+}
+.clients-item{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+   
+}
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
+.clients-item .clients-link:hover{
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.clients-item .clients-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.clients-link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+        width: 170px;
+        height: 92px;
+         
+        fill: var(--bacground-icon-color);
+    
+        border: 1px solid var(--bacground-icon-color);
+        border-radius: 4px;
+}
+
 /*Footer*/
 .footer{
     padding-top: 60px;
@@ -334,9 +471,51 @@ margin: 30px 0px;
     color: var(--background-color);
    
 }
+ .contacts-footer{
+     margin-right: 70px;
+ }
 .contacts-footer .item.item:not(:last-child){
     margin-bottom: 9px;
 }
+
+.footer-block{
+    display: flex;
+}
+.socials-footer{
+    display: block;
+
+}
+.social-list{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+.tittle-social{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    
+    text-transform: uppercase;
+
+    color: var(--background-color);
+}
+
+.footer-icon{
+    fill: var(--background-color);
+}
+.social-item{
+    margin-top: 20px;
+}
+.social-item .social-link{
+    background-color:var(--bacgoround-social-color);
+}
+.social-item .social-link:hover{
+    background-color: var(--accent-color);
+}
+.social-item .social-link:focus {
+    background-color: var(--accent-color);
+}
+
 /*!!! ПОРТФОЛИО !!!*/
 
 /*Фильры*/
