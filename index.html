@@ -48,7 +48,12 @@
         <section class="hero">
             <div class="container">
                 <h1 class="main-title">ЭФФЕКТИВНОЕ РЕШЕНИЕ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button class="order-service" type="button">Заказать услугу</button>
+                <button class="order-service" data-modal-open  type="button">Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="button-close" data-modal-close >x</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -109,14 +114,30 @@
             <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="work list">
-                <li class="item">
-                    <img src="./images/gallery/img-gallery-1.jpg" alt="работа с теримналом" width="370" height="294">
+                <li class="item work-box">
+                     <div class="work-card">
+                         <p class="text-work">Десктопные приложения</p>
+                         <img src="./images/gallery/img-gallery-1.jpg"
+                         alt="работа с теримналом" 
+                         width="370" height="294">
+
+                    </div>
                 </li>
-                <li class="item">
-                    <img src="./images/gallery/img-gallery-2.jpg" alt="Работа с пользовотельской частью" width="370" height="294">
+                <li class="item work-box"> 
+                    <div class="work-card">
+                        <p class="text-work">Мобильные приложения</p>
+                       <img src="./images/gallery/img-gallery-2.jpg" 
+                       alt="Работа с пользовотельской частью" 
+                       width="370" height="294">
+                    </div>
                 </li>
-                <li class="item">
-                    <img src="./images/gallery/img-gallery-3.jpg" alt="Работа с Дизайном" width="370" height="294">
+                <li class="item work-box"> 
+                    <div class="work-card">
+                        <p class="text-work">Дизайнерские решения</p>
+                        <img src="./images/gallery/img-gallery-3.jpg" 
+                        alt="Работа с Дизайном" 
+                        width="370" height="294">
+                     </div>
                 </li>
             </ul>
         </div>
@@ -380,5 +401,6 @@
              </div>
          </div>
      </footer>
+     <script src="./js/modal.js"></script>
 </body>
 </html>
