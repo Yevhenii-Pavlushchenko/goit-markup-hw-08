@@ -24,8 +24,8 @@
             <!--Навигация-->
             <nav class="navigation">
                 <ul class="site-nav list">
-                    <li class="item"><a class="nav-link" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="nav-link current-color" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="nav-link " href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="nav-link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -51,7 +51,12 @@
                 <button class="order-service" data-modal-open  type="button">Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button class="button-close" data-modal-close >x</button>
+                        <button class="button-close" data-modal-close >
+                            <svg class="social-icon icon-close" width="11" height="11">
+                                <use href="./images/sprite.svg#close">
+                                </use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
