@@ -49,6 +49,7 @@
             <div class="container">
                 <h1 class="main-title">ЭФФЕКТИВНОЕ РЕШЕНИЕ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button class="order-service" data-modal-open  type="button">Заказать услугу</button>
+                <!--Модалка-->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="button-close" data-modal-close >
@@ -57,9 +58,36 @@
                                 </use>
                             </svg>
                         </button>
+                        <!--Форма-->
+                        <form class="form">
+                            <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                            <div class="form-field">
+                                <label class="label-name" for="name">Имя
+                                </label>
+                                <input type="text" name="name" id="name" autofocus>
+                            </div>
+                            <div class="form-field">
+                                <label  class="label-name" for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel">
+                            </div>
+                            <div class="form-field">
+                                <label class="label-name" for="mail">Почта</label>
+                                <input type="mail" name="mail" id="mail">
+                            </div>
+                            <!--Коментарий-->
+                            <div class="">
+                                <label class="label-name" for="comments">Коментарий</label>
+                                <textarea name="comments" id="comments" cols="30" rows="10"
+                                 placeholder="Оставьте комментарий"></textarea>
+                            </div>
+                            <button class="modal-btn-submit" type="submit">
+                                <p class="titel-btn-submit">Отправить</p> </button>
+                        </form>
+                        </div>
+
                     </div>
+                    
                 </div>
-            </div>
         </section>
         <!--Особенности-->
         <section class="section">
@@ -367,7 +395,7 @@
                      <li class="item"><a class="contacts-link" href="tel:380961111111">+38 096 111 11 11</a></li>
                   </ul>
                </address>
-            </div>
+             </div>
             
              <div class="socials-footer">
                     <span class="tittle-social">Присоединяйтесь</span>
@@ -402,6 +430,22 @@
                 
                     </ul>
              </div>
+             <div class="form-send">
+                <form action="">
+                    <label for="mail">
+                        <p class="titel-send">Подпишитесь на рассылку</p> 
+                        <input class="input-send" type="mail" id="mail" placeholder="E-mail">
+                        
+                        <button class="btn-send" type="submit">
+                            <p class="text-btn-send">Подписаться</p>
+                            <svg class="mail-icon" width="24" height="24"  >
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
+             </div>
+             
          </div>
      </footer>
      <script src="./js/modal.js"></script>
