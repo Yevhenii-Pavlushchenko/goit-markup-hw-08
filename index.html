@@ -31,7 +31,7 @@
             </nav>
             <ul class="contacts list">
                 <li class="item"><a class="contacts-link" href="mailto:info@devstudio.com">
-                    <svg class="mail-icon" width="16" height="12">
+                    <svg class="header-mail-icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a></li>
                 <li class="item"><a class="contacts-link" href="tel:380961111111">
@@ -61,27 +61,53 @@
                         <!--Форма-->
                         <form class="form">
                             <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
-                            <div class="form-field">
-                                <label class="label-name" for="name">Имя
-                                </label>
-                                <input type="text" name="name" id="name" autofocus>
+                            <!--Input-->
+                            <div class="form-modal">
+                                <div class="form-field">
+                                    <label class="label-name" for="name">Имя
+                                    </label>
+                                    <input class="form-input" type="text"
+                                     name="name" id="name" autofocus>
+                                    <svg class="icon-modal" width="18" height="18">
+                                        <use href="./images/sprite.svg#modal-person"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-field">
+                                    <label class="label-name" for="tel">Телефон</label>
+                                    <input class="form-input" type="tel" name="tel" id="tel">
+                                    <svg class="icon-modal" width="18" height="18">
+                                        <use href="./images/sprite.svg#modal-phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-field">
+                                    <label class="label-name" for="mail">Почта</label>
+                                    <input class="form-input" type="mail" name="mail" id="mail">
+                                    <svg class="icon-modal" width="18" height="18">
+                                        <use href="./images/sprite.svg#modal-email"></use>
+                                    </svg>
+                                </div>
+                                <!--Коментарий-->
+                                <div class="form-comments">
+                                    <label class="label-comments" for="comments">Коментарий</label>
+                                    <textarea class="textarea-comment" name="comments" id="comments" cols="30" rows="10"
+                                        placeholder="Введите текст"></textarea>
+                                </div>
+                                <div div class="form-agreement">
+                                    <label class="label-agreement" for="agreement">
+                                        <input class="input-agreement" type="checkbox" name="agreement" value="agreement" id="agreement">
+                                        <svg class="icon-checked" width="16" height="15">
+                                            <use href="./images/sprite.svg#icon-checkbox"></use>
+                                        </svg>
+                                        Соглашаюсь с рассылкой и принимаю
+                                        <a class="link-agreement" href="">Условия договора</a>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-field">
-                                <label  class="label-name" for="tel">Телефон</label>
-                                <input type="tel" name="tel" id="tel">
-                            </div>
-                            <div class="form-field">
-                                <label class="label-name" for="mail">Почта</label>
-                                <input type="mail" name="mail" id="mail">
-                            </div>
-                            <!--Коментарий-->
-                            <div class="">
-                                <label class="label-name" for="comments">Коментарий</label>
-                                <textarea name="comments" id="comments" cols="30" rows="10"
-                                 placeholder="Оставьте комментарий"></textarea>
-                            </div>
+                           
+                            <!--Кнопка отправки формы-->
                             <button class="modal-btn-submit" type="submit">
                                 <p class="titel-btn-submit">Отправить</p> </button>
+                                
                         </form>
                         </div>
 
