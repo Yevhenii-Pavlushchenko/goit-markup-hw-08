@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="form-field">
                                     <label class="label-name" for="mail">Почта</label>
-                                    <input class="form-input" type="mail" name="mail" id="mail">
+                                    <input class="form-input" type="email" name="mail" id="mail">
                                     <svg class="icon-modal" width="18" height="18">
                                         <use href="./images/sprite.svg#modal-email"></use>
                                     </svg>
@@ -92,13 +92,12 @@
                                     <textarea class="textarea-comment" name="comments" id="comments" cols="30" rows="10"
                                         placeholder="Введите текст"></textarea>
                                 </div>
-                                <div div class="form-agreement">
-                                    <label class="label-agreement" for="agreement">
+                                <!--Checkbox-->
+                                <div class="form-agreement">
+                                    <label class="label-agreement">
                                         <input class="input-agreement" type="checkbox" name="agreement" value="agreement" id="agreement">
-                                        <svg class="icon-checked" width="16" height="15">
-                                            <use href="./images/sprite.svg#icon-checkbox"></use>
-                                        </svg>
                                         Соглашаюсь с рассылкой и принимаю
+                                        <span class="icon-checked"></span>
                                         <a class="link-agreement" href="">Условия договора</a>
                                     </label>
                                 </div>
@@ -106,7 +105,8 @@
                            
                             <!--Кнопка отправки формы-->
                             <button class="modal-btn-submit" type="submit">
-                                <p class="titel-btn-submit">Отправить</p> </button>
+                                <span class="titel-btn-submit">Отправить</span> 
+                            </button>
                                 
                         </form>
                         </div>
@@ -457,18 +457,17 @@
                     </ul>
              </div>
              <div class="form-send">
-                <form action="">
-                    <label for="mail">
-                        <p class="titel-send">Подпишитесь на рассылку</p> 
-                        <input class="input-send" type="mail" id="mail" placeholder="E-mail">
-                        
-                        <button class="btn-send" type="submit">
-                            <p class="text-btn-send">Подписаться</p>
-                            <svg class="mail-icon" width="24" height="24"  >
-                                <use href="./images/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                <form>
+                    <label>
+                        <span class="titel-send">Подпишитесь на рассылку</span>
+                        <input class="input-send" type="email"  placeholder="E-mail">
                     </label>
+                    <button class="btn-send" type="submit">
+                        <span class="text-btn-send">Подписаться</span>
+                        <svg class="footer-icon-send" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
              </div>
              
