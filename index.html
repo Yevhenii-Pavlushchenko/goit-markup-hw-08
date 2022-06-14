@@ -51,73 +51,74 @@
         <!--Cекция Герой-->
         <section class="hero">
             <div class="container">
-                <h1 class="main-title">ЭФФЕКТИВНОЕ РЕШЕНИЕ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button class="order-service" data-modal-open  type="button">Заказать услугу</button>
+                <h1 class="hero__title">ЭФФЕКТИВНОЕ РЕШЕНИЕ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <button class="hero__btn" data-modal-open  type="button">Заказать услугу</button>
                 <!--Модалка-->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button class="button-close" data-modal-close >
-                            <svg class="social-icon icon-close" width="11" height="11">
+                        <button class="modal__btn-close" data-modal-close >
+                            <svg class="modal__icon-close" width="11" height="11">
                                 <use href="./images/sprite.svg#close">
                                 </use>
                             </svg>
                         </button>
                         <!--Форма-->
                         <form class="form">
-                            <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                            <h2 class="form__title">
+                                Оставьте свои данные, мы вам перезвоним</h2>
                             <!--Input-->
                             <div class="form-modal">
                                 <div class="form-field">
-                                    <label class="label-name" for="name">Имя
+                                    <label class="form-field__label" for="name">Имя
                                     </label>
-                                    <input class="form-input" type="text"
+                                    <input class="form-field__input" type="text"
                                      name="name" id="name" autofocus>
-                                    <svg class="icon-modal" width="18" height="18">
+                                    <svg class="form-field__icon-modal" width="18" height="18">
                                         <use href="./images/sprite.svg#modal-person"></use>
                                     </svg>
                                 </div>
                                 <div class="form-field">
-                                    <label class="label-name" for="tel">Телефон</label>
-                                    <input class="form-input" type="tel" name="tel" id="tel">
-                                    <svg class="icon-modal" width="18" height="18">
+                                    <label class="form-field__label" for="tel">Телефон</label>
+                                    <input class="form-field__input" type="tel" name="tel" id="tel">
+                                    <svg class="form-field__icon-modal" width="18" height="18">
                                         <use href="./images/sprite.svg#modal-phone"></use>
                                     </svg>
                                 </div>
                                 <div class="form-field">
-                                    <label class="label-name" for="mail">Почта</label>
-                                    <input class="form-input" type="email" name="mail" id="mail">
-                                    <svg class="icon-modal" width="18" height="18">
+                                    <label class="form-field__label" for="mail">Почта</label>
+                                    <input class="form-field__input" type="email" name="mail" id="mail">
+                                    <svg class="form-field__icon-modal" width="18" height="18">
                                         <use href="./images/sprite.svg#modal-email"></use>
                                     </svg>
                                 </div>
                                 <!--Коментарий-->
                                 <div class="form-comments">
-                                    <label class="label-comments" for="comments">Коментарий</label>
-                                    <textarea class="textarea-comment" name="comments" id="comments" cols="30" rows="10"
+                                    <label class="form-comments__label" for="comments">Коментарий</label>
+                                    <textarea class="form-comments__textarea" name="comments" id="comments" cols="30" rows="10"
                                         placeholder="Введите текст"></textarea>
                                 </div>
-                                <!--Checkbox-->
+                                <!--Cоглашение-->
                                 <div class="form-agreement">
-                                    <label class="label-agreement">
-                                        <input class="input-agreement" type="checkbox" name="agreement" value="agreement" id="agreement">
+                                    <label class="form-agreement__label">
+                                        <input class="form-agreement__input" type="checkbox" name="agreement" value="agreement" id="agreement">
                                         Соглашаюсь с рассылкой и принимаю
-                                        <span class="icon-checked"></span>
-                                        <a class="link-agreement" href="">Условия договора</a>
+                                        <span class="form-agreement__icon-checked"></span>
+                                        <a class="form-agreement__link" href="">Условия договора</a>
                                     </label>
                                 </div>
                             </div>
                            
                             <!--Кнопка отправки формы-->
-                            <button class="modal-btn-submit" type="submit">
-                                <span class="titel-btn-submit">Отправить</span> 
+                            <button class="form__btn-submit" type="submit">
+                                <span class="form__btn-text">Отправить</span> 
                             </button>
                                 
                         </form>
-                        </div>
+                     </div>
 
-                    </div>
-                    
                 </div>
+                    
+             </div>
         </section>
         <!--Особенности-->
         <section class="section">
