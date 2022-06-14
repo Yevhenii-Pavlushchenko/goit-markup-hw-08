@@ -516,20 +516,23 @@ border-style: hidden;
 /*Особенности */
 
 .section{
-   
     padding: 94px 0px;
 }
-.peculiarities{
+
+/*Скрытие заголовка*/
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.peculiarities-set{
     display: flex;
 }
-.peculiarities .item:not(:last-child) {
+.peculiarities-set .peculiarities-set__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.section .item:not(:last-child){
-    margin-right: 30px;
-}
-.container-icon{
+.peculiarities-set__container{
        display: flex;
         text-align: center;
         justify-content: center;
@@ -557,7 +560,7 @@ border-style: hidden;
     margin-bottom: 50px;
    
 }
-.peculiarities-title{
+.peculiarities-set__title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -569,41 +572,37 @@ border-style: hidden;
     margin-top: 0px;
     margin-bottom: 10px;
 }
-/*Скрытие заголовка*/
-.visually-hidden {
-    position: fixed;
-    transform: scale(0);
-}
-.peculiaritiles-text{
+.peculiarities-set__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
+
     margin-top: 0px;
 }
+
 /*Чем мы занимаемся*/
 .gallery{
     padding-top: 0px;
 }
-.work{
+.gallery-set{
     display: flex;
     padding-left: 0px;
     margin: 0;
 
 }
 
-.work .item{
+.gallery-set .gallery-set__item{
     margin-top: 0px;
     position: relative;
 }
-.work .item:not(:last-child){
+.gallery-set .gallery-set__item:not(:last-child){
     margin-right: 30px;
 }
-.work-box{
+.gallery-set__after{
     display: flex;
 
 }
-.work-box::after{
+.gallery-set__after::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -614,10 +613,8 @@ border-style: hidden;
     background-color: rgba(47, 48, 58, 0.8);
      
 }
-.work-card{
-    display: flex;
-}
-.text-work{
+
+.gallery-set__text{
     position: absolute;
     bottom:27px;
     left: 50%;
@@ -638,32 +635,31 @@ border-style: hidden;
 
 
 /*Наша команада*/
-.team{
+.team {
+    background-color: var(--background-second-color);
+}
+.team__list{
     display: flex;
     
 }
-.team .item{
+.team .team__item{
    background-color:var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team .item:not(:last-child){
+.team .team__item:not(:last-child){
     margin-right: 30px;
 }
-.team{
-    background-color:var(--background-second-color);
-   
-    
-}
+
 .section-team .container{
     margin-bottom: 0px;
 }
-.box-team{
+.box-card{
 padding: 30px 0px;
 }
-.team .title{
+.box-card__title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -674,7 +670,7 @@ padding: 30px 0px;
     margin-bottom: 10px;
     
 }
-.team .team-position{
+.box-card__position{
     font-size: 16px;
     line-height: 1.18;
 
@@ -692,14 +688,14 @@ padding: 30px 0px;
    
 }
 
-.social-item:not(:last-child){
+.social__item:not(:last-child){
     margin-right: 10px;
    
 }
 .footer-socials__item:not(:last-child){
     margin-right: 10px;
 }
-.social-link{
+.social__link{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -715,20 +711,20 @@ padding: 30px 0px;
     background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 }
-.social-link:hover{
+.social__link:hover{
     background-color: #2196F3;
 }
-.social-link:focus{
+.social__link:focus{
     background-color: #2196F3;
 }
 
-.social-icon {
+.social__icon {
     fill:var(--bacground-icon-color);
 }
-.social-link:hover .social-icon{
+.social__link:hover .social__icon{
     fill: var(--background-color);
 }
-.social-link:focus .social-icon{
+.social__link:focus .social__icon{
     fill: var(--background-color);
 }
 
