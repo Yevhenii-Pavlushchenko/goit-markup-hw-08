@@ -162,8 +162,12 @@ color:var(--titel-text-color) ;
     display: flex;
     margin-left: auto;
 }
-.contacts .contacts__item:not(:last-child){
+
+.contacts__item:not(:last-child){
  margin-right: 50px;
+}
+ .footer__contacts .contacts__item--footer {
+    margin-right: 0px
 }
 .contacts__link{
    display: flex;
@@ -392,8 +396,6 @@ color:var(--titel-text-color) ;
 .form-field__input:focus ~ .form-field__icon-modal {
     fill: var(--accent-color);
 }
-
-
 
 
 /*Комментарий*/
@@ -729,31 +731,31 @@ padding: 30px 0px;
 }
 
 /*   Клиенты   */
-.clients-list{
+.clients__list{
     display: flex;
     justify-items: center;
     text-align: center;
 }
 
-.clients-item{
+.clients__item{
     display: flex;
     justify-content: center;
     align-items: center;
     background-position: center;
 }
-.clients-item:not(:last-child){
+.clients__item:not(:last-child){
     margin-right: 30px;
 }
-.clients-item .clients-link:hover{
+.clients__item .clients__link:hover{
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
-.clients-item .clients-link:focus{
+.clients__item .clients__link:focus{
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.clients-link{
+.clients__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -792,6 +794,7 @@ padding: 30px 0px;
 .footer-logoweb{
     display: block;
     margin-bottom: 20px;
+    margin-right: 0px;
 }
 
 .logoweb__text--white {
@@ -831,16 +834,16 @@ padding: 30px 0px;
 }
 
 
-.social-link--dark{
+.social__link--dark{
     
     background-color:var(--bacgoround-social-color);
     
     
 }
-.footer-socials__item .social-link:hover{
+.footer-socials__item .social__link:hover{
     background-color: var(--accent-color);
 }
-.footer-socials__item .social-link:focus{
+.footer-socials__item .social__link:focus{
     background-color: var(--accent-color);
 }
 /*Подписаться на рассылку*/
