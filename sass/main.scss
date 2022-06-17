@@ -1,1 +1,31 @@
-@import './varibales';
+/*Общие*/
+         /*Утилиты*/
+@import './utils/varibales';
+@import './utils/placeholder';
+@import './utils/mixins' ;
+@import './utils/visuailly-hidden';
+        /*Базовые*/
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+@import './base/section';
+
+/*header*/
+@import './components/header/page-header';
+@import './components/header/logotype';
+@import './components/header/navigation';
+@import './components/header/contacts';
+
+
+/*Секции*/
+@import './components/section/hero';
+@import './components/section/peculiarities-set/peculiarities-set';
+@import'./components/section/gallery/gallery';
+@import './components/section/team/team';
+@import './components/section/clients/clients';
+
+/*Футер*/
+@import './components/footer/footer-main';
+
+/*Модалка*/
+@import './components/section/modal/modal-main';

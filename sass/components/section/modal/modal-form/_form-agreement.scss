@@ -1,0 +1,52 @@
+/*Соглашение*/
+.form-agreement {
+    width: 448px;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.form-agreement__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.form-agreement__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: var(--text-color);
+
+}
+
+.form-agreement__icon-checked {
+    position: absolute;
+    background-image: url(../images/icons/check-off.svg);
+    width: 16px;
+    height: 15px;
+    left: 1px;
+}
+
+.form-agreement__input:checked+.form-agreement__icon-checked {
+    background-image: url(../images/icons/check-active.svg);
+    background-origin: border-box;
+    background-size: contain;
+    border-style: hidden;
+}
+
+.form-agreement__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-left: 5px;
+
+    color: var(--accent-color);
+}

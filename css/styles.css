@@ -515,7 +515,7 @@ border-style: hidden;
 
 
 /*Секции*/
-/*Особенности */
+
 
 .section{
     padding: 94px 0px;
@@ -526,7 +526,7 @@ border-style: hidden;
     position: fixed;
     transform: scale(0);
 }
-
+/*Секция  Особенности */
 .peculiarities-set{
     display: flex;
 }
@@ -790,7 +790,7 @@ padding: 30px 0px;
 .footer__adress{
     margin-right: 70px;
 }
-/*Логотип*/
+/*Логотип футер*/
 .footer-logoweb{
     display: block;
     margin-bottom: 20px;
@@ -838,7 +838,6 @@ padding: 30px 0px;
     
     background-color:var(--bacgoround-social-color);
     
-    
 }
 .footer-socials__item .social__link:hover{
     background-color: var(--accent-color);
@@ -846,8 +845,8 @@ padding: 30px 0px;
 .footer-socials__item .social__link:focus{
     background-color: var(--accent-color);
 }
-/*Подписаться на рассылку*/
 
+/*Подписаться на рассылку*/
 .form-send{
     margin-left: auto;
     position: relative;

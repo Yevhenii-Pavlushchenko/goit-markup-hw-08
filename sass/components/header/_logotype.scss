@@ -1,0 +1,18 @@
+/*Логотип*/
+.logoweb {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: $accent-color;
+
+    margin-right: 93px;
+}
+
+.logoweb__text {
+
+    color: $titel-text-color;
+}

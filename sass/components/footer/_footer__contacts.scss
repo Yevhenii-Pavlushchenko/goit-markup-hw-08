@@ -1,0 +1,8 @@
+/*Контакты футер*/
+.footer__contacts {
+    display: block;
+}
+
+.footer__contacts .contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}

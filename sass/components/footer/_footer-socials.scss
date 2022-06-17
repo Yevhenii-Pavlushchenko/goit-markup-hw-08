@@ -1,0 +1,41 @@
+/*Соц сети*/
+.footer-socials {
+    display: block;
+}
+
+.footer-socials__tittle {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    color: var(--background-color);
+}
+
+.footer-socials__list {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+
+.footer-icon {
+    fill: var(--background-color);
+}
+
+
+.social__link--dark {
+
+    background-color: var(--bacgoround-social-color);
+
+}
+
+.footer-socials__item .social__link:hover {
+    background-color: var(--accent-color);
+}
+
+.footer-socials__item .social__link:focus {
+    background-color: var(--accent-color);
+}

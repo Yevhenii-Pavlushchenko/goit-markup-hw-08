@@ -1,0 +1,35 @@
+/*Сброс отступов для заголовков*/
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+/*Сброс для img*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+/*Сброс курсива для адресса*/
+address {
+    font-style: normal;
+}
+
+/*Сброс ниженего подчеркивания с ссылок*/
+.link {
+    text-decoration: none;
+}

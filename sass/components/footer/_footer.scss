@@ -1,0 +1,19 @@
+/*Общие*/
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-footer-color);
+}
+
+.footer__block {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer .container {
+    margin-bottom: 0px;
+}
+
+.footer__adress {
+    margin-right: 70px;
+}

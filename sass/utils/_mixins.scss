@@ -1,0 +1,8 @@
+/*миксины
+Записываются в сцсс через функцию "@include li()" */
+
+@mixin centeredFlex ($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
