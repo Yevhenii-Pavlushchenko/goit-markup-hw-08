@@ -2,9 +2,9 @@
 .form-send {
     margin-left: auto;
     position: relative;
-}
 
-.form-send__titel {
+
+&__titel {
     display: block;
     font-weight: 700;
     font-size: 14px;
@@ -15,7 +15,8 @@
     margin-bottom: 20px;
 }
 
-.form-send__input {
+
+&__input {
     width: 358px;
     height: 48px;
     padding-left: 20px;
@@ -30,7 +31,7 @@
     color: var(--background-color);
 }
 
-.form-send__btn {
+&__btn {
     position: absolute;
 
     display: inline-flex;
@@ -51,7 +52,7 @@
 
 }
 
-.form-send__btn-text {
+&__btn-text {
 
     display: flex;
     align-items: center;
@@ -66,4 +67,5 @@
     letter-spacing: 0.06em;
 
     color: var(--background-color);
+}
 }

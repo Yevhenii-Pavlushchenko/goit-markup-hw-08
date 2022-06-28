@@ -10,9 +10,10 @@
     color: $accent-color;
 
     margin-right: 93px;
+   
+    &__text {
+                color: $titel-text-color;
+        }
 }
 
-.logoweb__text {
 
-    color: $titel-text-color;
-}

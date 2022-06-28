@@ -3,17 +3,17 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-footer-color);
-}
+    &__block {
+            display: flex;
+            align-items: baseline;
+        }
+    
+    .footer .container {
+            margin-bottom: 0px;
+        }
+    
+    &__adress {
+            margin-right: 70px;
+        }
 
-.footer__block {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer .container {
-    margin-bottom: 0px;
-}
-
-.footer__adress {
-    margin-right: 70px;
 }

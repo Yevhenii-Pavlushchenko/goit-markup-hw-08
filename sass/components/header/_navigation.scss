@@ -1,13 +1,16 @@
 /*navigation*/
-.navigation__list {
+.navigation{
+
+
+&__list {
     display: flex;
 }
 
-.navigation__list .navigation__item:not(:last-child) {
+&__list &__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.navigation__link {
+&__link {
     position: relative;
 
     display: block;
@@ -26,9 +29,8 @@
 
 }
 
-.navigation__link.navigation__link--active::after {
+ &__link--active::after {
     content: "";
-
     position: absolute;
     left: 0;
     bottom: 0;
@@ -40,19 +42,18 @@
     background-color: var(--accent-color);
     border-radius: 2px;
 
-
     transition: opacity 250ms var(--timing-function);
-
 }
 
-.navigation__acсent {
+&__acсent {
     color: var(--accent-color);
 }
 
-.navigation__link:hover {
+&__link:hover {
     color: var(--accent-color);
 }
 
-.navigation__link:focus {
+&__link:focus {
     color: var(--accent-color);
+}
 }

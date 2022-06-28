@@ -2,17 +2,14 @@
 .contacts {
     display: flex;
     margin-left: auto;
-}
+   
 
-.contacts__item:not(:last-child) {
+
+ &__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.footer__contacts .contacts__item--footer {
-    margin-right: 0px
-}
-
-.contacts__link {
+&__link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -21,32 +18,37 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: var(--text-color);
+    color:$text-color;
     transition: color 250ms var(--timing-function);
 }
 
-.contacts__link:hover {
+&__link:hover {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.contacts__link:focus {
+&__link:focus {
     color: var(--accent-color);
 }
 
-.contacts__icon-mail {
+&__icon-mail {
     height: 12px;
     margin-right: 10px;
     fill: currentColor
 }
 
-.contacts__icon-phone {
+&__icon-phone {
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
 
-.contacts__text-adress {
+&__text-adress {
     color: var(--background-color);
 
+}
+}
+
+.footer__contacts .contacts__item--footer {
+    margin-right: 0px
 }

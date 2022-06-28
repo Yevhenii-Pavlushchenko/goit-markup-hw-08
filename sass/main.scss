@@ -18,14 +18,21 @@
 
 
 /*Секции*/
-@import './components/section/hero';
-@import './components/section/peculiarities-set/peculiarities-set';
-@import'./components/section/gallery/gallery';
-@import './components/section/team/team';
-@import './components/section/clients/clients';
+    /*Студия*/
+@import './components/section-studio/hero/hero';
+@import './components/section-studio/peculiarities-set/peculiarities-set';
+@import'./components/section-studio/gallery/gallery';
+@import './components/section-studio/team/team';
+@import './components/section-studio/clients/clients';
+    /*Портфолио*/
+@import'./components/section-portfolio/filter/filter';
+@import './components/section-portfolio/project-set/project-set';
+@import'./components/section-portfolio/project-card/project-card';
+
+
 
 /*Футер*/
 @import './components/footer/footer-main';
 
 /*Модалка*/
-@import './components/section/modal/modal-main';
+@import './components/section-studio/modal/modal-main';
