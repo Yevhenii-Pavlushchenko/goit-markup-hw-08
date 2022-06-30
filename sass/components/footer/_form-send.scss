@@ -1,8 +1,7 @@
 /*Подписаться на рассылку*/
 .form-send {
     margin-left: auto;
-    position: relative;
-
+   
 
 &__titel {
     display: block;
@@ -14,7 +13,6 @@
     color: var(--background-color);
     margin-bottom: 20px;
 }
-
 
 &__input {
     width: 358px;
@@ -32,8 +30,6 @@
 }
 
 &__btn {
-    position: absolute;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -50,22 +46,17 @@
     border-radius: 4px;
     border-style: hidden;
 
-}
-
-&__btn-text {
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    margin-right: 10px;
 
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+    
+        color: var(--background-color);
 
-    color: var(--background-color);
 }
+&__btn-icon{
+    margin-left: 10px;
+}
+
 }
