@@ -127,11 +127,11 @@ address {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #2196F3;
+  color: var(--accent-color);
   margin-right: 93px;
 }
 .logoweb__text {
-  color: #212121;
+  color: var(--text-color);
 }
 
 /*navigation*/
