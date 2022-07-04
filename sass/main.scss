@@ -1,38 +1,31 @@
-/*Общие*/
-         /*Утилиты*/
+
+/*Утилиты*/
 @import './utils/varibales';
 @import './utils/placeholder';
-@import './utils/mixins' ;
+@import './utils/mixins';
 @import './utils/visuailly-hidden';
-        /*Базовые*/
+@import './utils/breakpoints';
+
+/*Базовые*/
 @import './base/common';
 @import './base/reset';
 @import './base/container';
 @import './base/section';
 
-/*header*/
-@import './components/header/page-header';
-@import './components/header/logotype';
-@import './components/header/navigation';
-@import './components/header/contacts';
-
-
 /*Секции*/
-    /*Студия*/
-@import './components/section-studio/hero/hero';
-@import './components/section-studio/peculiarities-set/peculiarities-set';
-@import'./components/section-studio/gallery/gallery';
-@import './components/section-studio/team/team';
-@import './components/section-studio/clients/clients';
-    /*Портфолио*/
-@import'./components/section-portfolio/filter/filter';
-@import './components/section-portfolio/project-set/project-set';
-@import'./components/section-portfolio/project-card/project-card';
 
+    /*header*/
+        @import './components/header/page-header';
+        @import './components/header/logotype';
+        @import './components/header/navigation';
+        @import './components/header/contacts';
+    
+    /*studio-sections*/
+        @import './components/studio-sections/hero';
+        @import './components/studio-sections/peculiarities-set';
+        @import './components/studio-sections/gallery';
+        @import './components/studio-sections/team';
+        @import './components/studio-sections/clients';
+        
 
-
-/*Футер*/
-@import './components/footer/footer-main';
-
-/*Модалка*/
-@import './components/section-studio/modal/modal-main';
+        

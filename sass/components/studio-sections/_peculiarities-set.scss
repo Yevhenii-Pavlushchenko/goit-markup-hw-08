@@ -1,18 +1,11 @@
-/*Секция  Особенности */
 .peculiarities-set {
-    display: flex;
-
-    &__item:not(:last-child) {
-            margin-right: 30px;
-        }
-    
-       &__container {
+    &__container {
             display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
     
-            width: 270px;
+            /*width: 270px;*/
             height: 120px;
     
             padding-left: auto;
@@ -22,7 +15,14 @@
             background-color: var(--background-second-color);
             border-radius: 4px;
         }
-        
+
+        @media(max-width:$before-tablet) {
+            &__item:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            
+        }
+    
         &__title {
             font-size: 14px;
             line-height: 1.14;
@@ -34,6 +34,13 @@
     
             margin-top: 0px;
             margin-bottom: 10px;
+            
+        }
+        @media (max-width:$tablet){
+            &__title{
+                text-align: center;
+            }
+            
         }
     
         &__text {
@@ -44,4 +51,3 @@
             margin-top: 0px;
         }
 }
-

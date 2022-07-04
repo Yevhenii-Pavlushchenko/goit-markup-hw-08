@@ -1,5 +1,12 @@
-.section {
-    padding: 94px 0px;
+@media(min-width:$desktop) {
+    .section {
+        padding: 94px 0px;
+    }
+}
+@media(max-width:$desktop) {
+    .section {
+        padding: 60px 0px;
+    }
 }
  .section-title {
      font-weight: 700;
