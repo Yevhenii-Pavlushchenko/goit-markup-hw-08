@@ -1,0 +1,23 @@
+/*Контакты футер*/
+.footer__contacts {
+    display: block;
+   }
+.footer__contacts .contacts__item:not(:last-child) {
+    margin-bottom: 13px;
+}
+@media (max-width:$before-tablet){
+    .footer__contacts {
+           margin-bottom: 60px;
+        }
+    .footer__contacts .contacts__item {
+            display: flex;
+            justify-content: center;
+            
+        }
+}
+
+@media (min-width:$tablet){
+.contacts__link--footer {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

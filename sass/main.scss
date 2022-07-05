@@ -27,5 +27,9 @@
         @import './components/studio-sections/team';
         @import './components/studio-sections/clients';
         
-
-        
+    /*footer*/
+        @import './components/footer/footer-base';
+        @import './components/footer/footer-logotype';
+        @import './components/footer/footer-contacs';
+        @import './components/footer/footer-socials';
+        @import './components/footer/footer-form-send';

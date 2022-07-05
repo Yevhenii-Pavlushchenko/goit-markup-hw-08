@@ -1,0 +1,49 @@
+/*Соц сети*/
+.footer-socials {
+    display: block;
+    
+    &__tittle {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+        color: var(--background-color);
+    }
+
+    &__list {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__item .social__link:hover {
+        background-color: var(--accent-color);
+    }
+
+    &__item .social__link:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+@media (max-width:$before-tablet) {
+    .footer-socials {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-icon {
+    fill: var(--background-color);
+}
+
+
+.social__link--dark {
+    background-color: var(--bacgoround-social-color);
+}

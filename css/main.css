@@ -221,9 +221,6 @@ address {
   display: flex;
   margin-left: auto;
 }
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
 .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,11 +263,70 @@ address {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
 .footer__contacts .contacts__item--footer {
   margin-right: 0px;
 }
 
 /*studio-sections*/
+/*hero*/
+.hero {
+  text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title/hero.jpg);
+  background-color: var(--background-footer-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  color: var(--background-color);
+}
+.hero__btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: hidden;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
 .peculiarities-set__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +412,7 @@ address {
   .team__photo {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
 }
 .box-card {
@@ -472,4 +529,178 @@ address {
   border-radius: 4px;
   -webkit-transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+/*footer*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-footer-color);
+  /* &__adress {
+       margin-right: 70px;
+   }*/
+}
+
+@media (min-width: 768px) {
+  .footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+.footer .container {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    text-align: center;
+  }
+}
+/*Логотип футер*/
+.footer-logoweb {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+.logoweb__text--white {
+  color: var(--background-color);
+}
+
+/*Контакты футер*/
+.footer__contacts {
+  display: block;
+}
+
+.footer__contacts .contacts__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+@media (max-width: 767px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+  }
+
+  .footer__contacts .contacts__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__link--footer {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+/*Соц сети*/
+.footer-socials {
+  display: block;
+}
+.footer-socials__tittle {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--background-color);
+}
+.footer-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-socials__item .social__link:hover {
+  background-color: var(--accent-color);
+}
+.footer-socials__item .social__link:focus {
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+}
+.footer-icon {
+  fill: var(--background-color);
+}
+
+.social__link--dark {
+  background-color: var(--bacgoround-social-color);
+}
+
+.form-send {
+  margin-left: auto;
+}
+.form-send__titel {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+.form-send__input {
+  width: 100%;
+  height: 48px;
+  padding-left: 20px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--background-color);
+}
+.form-send__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: hidden;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+}
+.form-send__btn-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .form-send__input {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

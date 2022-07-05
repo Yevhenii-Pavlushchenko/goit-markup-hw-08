@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-footer-color);
+
+   /* &__adress {
+        margin-right: 70px;
+    }*/
+    
+}
+
+@media (min-width:$tablet){
+    .footer{
+        &__block {
+                display: flex;
+                align-items: baseline;
+            }
+    }
+    
+}
+
+.footer .container {
+    margin-bottom: 0px;
+   
+}
+@media (max-width:$before-tablet){
+    .footer .container {
+              text-align: center;
+        }
+}
