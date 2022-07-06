@@ -44,8 +44,16 @@
     }
 }
 
+@media (max-width:$before-desktop) {
+        .contacts {
+        display: block;
 
-@media (max-width:767px){
+        &__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width:$before-tablet){
     .contacts{
         display: none;
     }

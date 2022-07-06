@@ -26,6 +26,11 @@
         @import './components/studio-sections/gallery';
         @import './components/studio-sections/team';
         @import './components/studio-sections/clients';
+
+    /*studio-sections*/
+        @import './components/portfolio-sections/filters';
+        @import './components/portfolio-sections/project-set';
+        @import './components/portfolio-sections/project-card';
         
     /*footer*/
         @import './components/footer/footer-base';

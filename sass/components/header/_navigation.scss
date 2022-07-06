@@ -62,3 +62,9 @@
 
     }
 }
+
+@media (max-width:$before-desktop) {
+    .navigation {
+        margin-right: 60px;
+    }
+}
