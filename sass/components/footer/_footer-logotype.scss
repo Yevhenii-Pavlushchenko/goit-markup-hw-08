@@ -4,8 +4,19 @@
     display: block;
     margin-bottom: 20px;
     margin-right: 0px;
+       
 }
+
 
 .logoweb__text--white {
     color: var(--background-color);
 }
+
+
+         @media(max-width:$desktop) {
+             .footer-logoweb {
+                 display: flex;
+                 justify-content: center;
+    
+             }
+         }

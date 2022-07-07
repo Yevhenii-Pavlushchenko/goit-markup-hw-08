@@ -14,17 +14,27 @@
         &__block {
                 display: flex;
                 align-items: baseline;
+                flex-wrap: wrap;
+                justify-content:space-around;
             }
     }
     
 }
 
+
 .footer .container {
     margin-bottom: 0px;
    
 }
-@media (max-width:$before-tablet){
+@media (max-width:$desktop){
     .footer .container {
               text-align: center;
         }
+}
+@media (min-width:$desktop) {
+    .footer {
+        &__adress {
+            margin-right: 70px;
+        }
+    }
 }

@@ -9,11 +9,16 @@
     .footer__contacts {
            margin-bottom: 60px;
         }
+   
+}
+
+@media (max-width:$desktop) {
+    
     .footer__contacts .contacts__item {
-            display: flex;
-            justify-content: center;
-            
-        }
+        display: flex;
+        justify-content: center;
+
+    }
 }
 
 @media (min-width:$tablet){

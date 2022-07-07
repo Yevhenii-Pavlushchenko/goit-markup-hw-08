@@ -1,5 +1,5 @@
 .form-send {
-    margin-left: auto;
+   
 
 
     &__titel {
@@ -64,5 +64,21 @@
 @media (max-width:$before-tablet){
     .form-send__input{
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width:$tablet){
+    .form-send{
+        margin-top: 60px;
+    
+        &__btn{
+            margin-top: 20px;
+        }
+                }
+}
+
+@media (min-width:$desktop){
+    .form-send {
+        margin-left: auto;
     }
 }
