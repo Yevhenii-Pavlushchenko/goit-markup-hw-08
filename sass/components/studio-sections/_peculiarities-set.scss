@@ -16,12 +16,32 @@
             border-radius: 4px;
         }
 
-        @media(max-width:$before-tablet) {
+             @media(max-width:$before-tablet) {
             &__item:not(:last-child) {
                     margin-bottom: 30px;
                 }
             
         }
+            @media(min-width:$tablet) {
+                &__list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+            
+                &__item {
+                        width: calc((100% - 60px) /2);
+                   }
+             }
+            
+             @media(min-width:$desktop) {
+                &__item {
+                        width: 270px;
+                    }
+             }
+            
+        
+       
     
         &__title {
             font-size: 14px;

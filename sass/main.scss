@@ -12,12 +12,13 @@
 @import './base/container';
 @import './base/section';
 
-/*Секции*/
+  /*Секции*/
 
     /*header*/
         @import './components/header/page-header';
         @import './components/header/logotype';
         @import './components/header/navigation';
+        @import './components/header/navigation-mobile';
         @import './components/header/contacts';
     
     /*studio-sections*/
@@ -32,9 +33,18 @@
         @import './components/portfolio-sections/project-set';
         @import './components/portfolio-sections/project-card';
         
-    /*footer*/
-        @import './components/footer/footer-base';
-        @import './components/footer/footer-logotype';
-        @import './components/footer/footer-contacs';
-        @import './components/footer/footer-socials';
-        @import './components/footer/footer-form-send';
+    /*modal*/
+        @import './components/modal/modal';
+        @import './components/modal/modal-backdrop';
+        @import './components/modal/modal-form';
+        @import './components/modal/modal-form-field';
+        @import './components/modal/modal-form-comments';
+        @import './components/modal/modal-_form-agreement';
+        @import './components/modal/modal-_form__btn-submit';
+
+ /*footer*/
+ @import './components/footer/footer-base';
+ @import './components/footer/footer-logotype';
+ @import './components/footer/footer-contacs';
+ @import './components/footer/footer-socials';
+ @import './components/footer/footer-form-send';

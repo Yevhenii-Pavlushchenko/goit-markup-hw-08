@@ -24,6 +24,27 @@
         <div class="nav-main container">
             <!--Логотип-->
             <a class="logoweb" href="./index.html">Web<span class="logoweb__text">Studio</span></a>
+            <!--Навигация mobile-->
+            <nav class="navigation-mobile ">
+                <button 
+                class="navigation-mobile__button"
+                data-modal-button 
+                 aria-label="Переключатель мобильного меню"
+                aria-expanded="false"
+                type="button">                 
+                    <svg width="40" height="40">
+                        <use class="navigation-mobile__icon-menu"
+                        width="24" height="16" 
+                        href="./images/sprite.svg#icon-mobile-nav-menu24px">
+                        </use>
+                        <use class="navigation-mobile__icon-close" 
+                        width="19" height="19" 
+                        href="./images/sprite.svg#icon-mobile-nav-close24px">
+                        </use>
+                    </svg>
+                </button>
+                <div class="menu-mobile">hello</div>
+            </nav>
             <!--Навигация-->
             <nav class="navigation">
                 <ul class="navigation__list list">
@@ -56,7 +77,7 @@
                 <h1 class="hero__title">ЭФФЕКТИВНОЕ РЕШЕНИЕ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button class="hero__btn" data-modal-open  type="button">Заказать услугу</button>
                 <!--Модалка-->
-                <div class="backdrop is-hidden" style="display: none" data-modal>
+                <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="modal__btn-close" data-modal-close >
                             <svg class="modal__icon-close" width="11" height="11">
@@ -126,7 +147,7 @@
         <section class="peculiarities section">
             <div class="container">
                 <h2 class="peculiarities__title section-title visually-hidden">Особенности</h2>
-                 <ul class="peculiarities-set list">
+                 <ul class=" peculiarities-set peculiarities-set__list list">
                     <li class="peculiarities-set__item">
                         <div class="peculiarities-set__container">
                            <svg class="peculiarities__icon" width="70" height="70">

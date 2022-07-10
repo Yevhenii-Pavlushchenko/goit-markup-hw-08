@@ -3,33 +3,55 @@
     background-color: var(--background-second-color);
 
        &__item {
-        background-color: var(--background-color);
+        width: 100%;
+            background-color: var(--background-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         }
-
-
 }
+
 @media (max-width:$before-tablet) {
     .team {
-    &__item:not(:last-child) {
-            margin-bottom: 30px;
+       .team__item{
+        width: 100%;
+       }
+         &__item:not(:last-child) {
+        
+        margin-bottom: 30px;
            }
      }
-    }    
-
-@media (min-width:$tablet) {
-    .team {
-        &__list {
-            display: flex;
+    }  
+    
+        @media (min-width:$tablet) {
+            .team {
+                &__list {
+                    display: flex;
+                }
+            }
         }
-         &__item:not(:last-child) {
-             margin-right: 30px;
-             }
-         }
-    }
+        @media (max-width:$before-desktop) {
+            .team {
+               &__list{
+                flex-wrap: wrap;
+                gap: 30px;
+               }
+               &__item{
+                width: calc((100% - 60px) /2);
+               }
+                }
+            }
+        
+        @media (min-width:$desktop) {
+            .team {
+                &__item:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+
 
 .section-team .container {
     margin-bottom: 0px;

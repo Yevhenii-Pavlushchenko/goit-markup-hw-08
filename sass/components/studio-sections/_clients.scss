@@ -4,18 +4,16 @@
            flex-wrap: wrap;
         justify-content: center;
         }
-    
         
-        @media (max-width:$before-tablet){
+        @media (max-width:$before-desktop){
             .clients{
-                &__item{
-                    margin: 15px;
-                }
-
+                &__list {
+                      gap: 30px;
+                    }    
             }
         }
 
-        @media (min-width:$tablet){
+        @media (min-width:$desktop){
             .clients{
                 &__item:not(:last-child) {
                         margin-right: 30px;

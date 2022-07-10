@@ -2,11 +2,13 @@
     /*display: flex;*/
     flex-direction: row;
     border-bottom: 1px solid #ECECEC;
+    position: relative;
 }
 
 .nav-main {
     /*display: flex;*/
     align-items: center;
+
 }
 @media(min-width: 768px) {
     .nav-main {
@@ -19,3 +21,6 @@
         margin-bottom: 16px;
     }
 }
+
+
+
