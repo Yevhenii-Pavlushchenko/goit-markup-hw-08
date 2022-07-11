@@ -3,3 +3,6 @@
     position: fixed;
     transform: scale(0);
 }
+.no-scroll {
+    overflow: hidden;
+}

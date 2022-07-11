@@ -1,9 +1,19 @@
 /*Форма*/
 .form {
     padding: 40px;
+    width: 450px;
+}
+@media(min-width:$tablet) {
+   .form{
+    width: 528px;
+   }
+    
+    
 }
 
 .form__title {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -14,7 +24,12 @@
 
     color: var(--titel-text-color);
 }
-
+@media(max-width:$before-desktop){
+    .form__title{
+        line-height: 1.5;
+    }
+    
+}
 .form-modal {
     margin-bottom: 30px;
 }

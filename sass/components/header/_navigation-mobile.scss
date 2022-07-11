@@ -2,7 +2,7 @@
     .navigation-mobile{
         display: flex;
     }
-    
+        /*кнопка*/
     
     .navigation-mobile__button{
        position: absolute;
@@ -24,28 +24,161 @@
     .navigation-mobile__button.is-open .navigation-mobile__icon-menu {
             display: none;
         }
-    .menu-mobile{
-        
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: antiquewhite;
-        padding: 20px;
-        text-align: center;
-    
-       
-    }
-
 }
 
-@media (min-width:$tablet){
-    .navigation-mobile{
-        display: none;
-  
+     /*Список*/
+         @media (max-width:$before-tablet) {
+            .menu-mobile {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100%;
+
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    overflow: auto;
     
+                    background-color: var(--background-color);
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    padding-top: 48px;
+                    padding-bottom: 48px;
+            
+            
+            
+                }
+                .menu-mobile.is-hidden {
+                    display: none;
+                    opacity: 0;
+                }
+
+                .menu-mobile__btn-close{
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    display: block;
+                        padding: 0px;
+                        border: none;
+                        background-color: transparent;
+
+                }
+            
+                .menu-mobile__box-1 {}
+            
+                .mobile-navigation {
+                    &__link:hover {
+                        color: var(--accent-color);
+                    }
+            
+                    &__link:focus {
+                        color: var(--accent-color);
+                    }
+                }
+            
+                .mobile-navigation__list {}
+            
+            
+                .mobile-navigation__item:not(:last-child) {
+                    margin-bottom: 32px;
+                }
+            
+                .mobile-navigation__link {
+                    text-decoration: none;
+            
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 47px;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+            
+                    color: #212121;
+            
+            
+                }
+            
+            
+                .mobile-contacts {
+                    margin-bottom: 64px;
+                    &__link:hover {
+                            color: var(--accent-color);
+                            fill: var(--accent-color);
+                        }
+                    
+                        &__link:focus {
+                            color: var(--accent-color);
+                        }
+                }
+            
+                .mobile-contacts__list {}
+            
+                .mobile-contacts__item:not(:last-child) {
+                    margin-bottom: 32px;
+                }
+            
+                .mobile-contacts__link {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+            
+                    color: $text-color;
+                    transition: color 250ms var(--timing-function)
+
+                
+                }
+            
+                .mobile-contacts_phone-link {
+                    font-size: 34px;
+                    line-height: 40px;
+                }
+            
+                .menu-mobile__box-2 {}
+            
+                .mobile-socials {}
+            
+                .mobile-socials__list {
+                    display: flex;
+                }
+            
+                .mobile-socials__item:not(:last-child) {
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    border-right: 1px solid rgba(33, 33, 33, 0.2);
+                }
+            
+                .mobile-socials__link {
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 1.22;
+                    letter-spacing: 0.02em;
+            
+                    color: var(--accent-color);
+                }
+         }
+    
+
+
+
+
+
+
+@media (min-width:$tablet) {
+    .navigation-mobile {
+        display: none;
+
+
         &__button {
             display: none;
         }
-        }
+    }
+    .menu-mobile{
+        display: none;
+    }
 }
+

@@ -9,13 +9,17 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/title/hero.jpg);
-    background-color: var(--background-footer-color);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--background-footer-color);
+
+    background-image:
+     linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            url('../images/title/hero-mobile.jpg');
+
+
+       
 
     &__title {
         font-weight: 900;
@@ -57,6 +61,47 @@
     }
 
 }
+// Х2 ГЕРОЙ НА МОБИЛКУ
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .hero {
+         background-image: url('/images/title/hero-mobile-2x.jpg');
+        
+        }
+
+ }
+
+    // герой на таблетку
+ @media(min-width: 481px) {
+     .hero {
+         background-image: url('/images/title/hero-tablet.jpg');
+     }
+
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .hero {
+                 background-image: url('/images/title/hero-tablet-2x.jpg');
+             }
+         }
+                // герой на десктоп
+                 @media(min-width: 768px) {
+                     .hero {
+                         background-image: url('/images/title/hero-desktop.jpg');
+                     }
+        
+        
+                     @media (min-device-pixel-ratio: 2),
+                     (min-resolution: 192dpi),
+                     (min-resolution: 2dppx) {
+                         .hero {
+                             background-image: url('/images/title/hero-desktop-2x.jpg');
+                         }
+                     }
+                 }
+ }
 
 
 @media (max-width:$before-tablet){

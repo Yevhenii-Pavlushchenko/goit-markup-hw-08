@@ -1,16 +1,27 @@
 /*Соглашение*/
 .form-agreement {
-    width: 448px;
+    /*width: 448px;*/
+    width: 370px;
     position: relative;
     margin-bottom: 30px;
 
+}
+@media(min-width:$desktop) {
+    .form-agreement {
+        width: 448px;
+    }
 }
 
 .form-agreement__label {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+@media(min-width:$desktop) {
+    .form-agreement__label {
     padding-left: 20px;
+    }
 }
 
 .form-agreement__input {
@@ -18,7 +29,7 @@
     -moz-appearance: none;
     appearance: none;
 
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: left;
@@ -26,6 +37,11 @@
     color: var(--text-color);
 
 }
+         @media(min-width:$desktop) {
+             .form-agreement__input {
+                 font-size: 14px;
+             }
+         }
 
 .form-agreement__icon-checked {
     position: absolute;
@@ -43,10 +59,17 @@
 }
 
 .form-agreement__link {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-left: 5px;
 
     color: var(--accent-color);
+           
+}
+@media(min-width:$desktop) {
+    .form-agreement__link {
+        font-size: 14px;
+        margin-left: 5px;
+    }
 }
