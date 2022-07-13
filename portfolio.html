@@ -22,6 +22,87 @@
     <div class="nav-main container">
         <!--Логотип-->
         <a class="logoweb" href="./index.html">Web<span class="logoweb__text">Studio</span></a>
+        <!--Menu mobile-->
+        <nav class="">
+            <button class="navigation-mobile__button" aria-label="Переключатель мобильного меню" aria-expanded="false"
+                type="button">
+                <svg width="40" height="40">
+                    <use class="navigation-mobile__icon-menu" width="24" height="16"
+                        href="./images/sprite.svg#icon-mobile-nav-menu24px">
+                    </use>
+                    <use class="navigation-mobile__icon-close" width="19" height="19"
+                        href="./images/sprite.svg#icon-mobile-nav-close24px">
+                    </use>
+                </svg>
+            </button>
+            <div class="menu-mobile is-hidden" data-menu-open>
+                <button class="menu-mobile__btn-close" type="button">
+                    <svg width="19" height="19">
+                        <use class="navigation-mobile__icon-close" width="19" height="19"
+                            href="./images/sprite.svg#icon-mobile-nav-close24px">
+                        </use>
+                    </svg>
+                </button>
+                <!--Навигация mobile-->
+                <div class="menu-mobile__box-1">
+                    <div class="mobile-navigation">
+                        <ul class="mobile-navigation__list list">
+                            <li class="mobile-navigation__item"><a class="mobile-navigation__link"
+                                    href="./index.html">Студия</a></li>
+                            <li class="mobile-navigation__item"><a class="mobile-navigation__link "
+                                    href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="menu-mobile__box-2">
+                    <!--Контакты mobile-->
+                    <div class="mobile-contacts">
+                        <ul class="mobile-contacts__list list">
+                            <li class="mobile-contacts__item">
+                                <a class="mobile-contacts__link mobile-contacts_phone-link" href="tel:380961111111">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-contacts__item">
+                                <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--social mobile-->
+                    <div class="mobile-socials">
+                        <ul class="mobile-socials__list list">
+                            <li class="mobile-socials__item">
+                                <a class="mobile-socials__link" href="Instagram">
+                                    Instagram</a>
+                            </li>
+                            <li class="mobile-socials__item">
+                                <a class="mobile-socials__link" href="Twitter">
+                                    Twitter</a>
+                            </li>
+                            <li class="mobile-socials__item">
+                                <a class="mobile-socials__link" href="Facebook">
+                                    Facebook</a>
+                            </li>
+                            <li class="mobile-socials__item">
+                                <a class="mobile-socials__link" href="Linkedin">
+                                    Linkedin</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
         <!--Навигация-->
         <nav class="navigation">
             <ul class="navigation__list list">
@@ -74,7 +155,10 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/techno.jpg" alt="Проект Технокряк"
+                            <img 
+                            srcset="./images/portfolio/techno.jpg 1x,
+                            ./images/portfolio/techno-2x.jpg 2x"
+                            src="./images/portfolio/techno.jpg" alt="Проект Технокряк"
                              width="370" height="294">
                         </div>
                         <div class="project-card__titel">
@@ -92,7 +176,10 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/poster.jpg"
+                            <img
+                            srcset="./images/portfolio/poster.jpg 1x,
+                            ./images/portfolio/poster-2x.jpg 2x"
+                            src="./images/portfolio/poster.jpg"
                              alt="Постер баскетбольного матча"
                               width="370" height="294">
                         </div>
@@ -111,7 +198,10 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/seafood.jpg" alt="Ресторан морской еды" 
+                            <img 
+                            srcset="./images/portfolio/seafood.jpg 1x,
+                            ./images/portfolio/seafood-2x.jpg 2x"
+                            src="./images/portfolio/seafood.jpg" alt="Ресторан морской еды" 
                             width="370" height="294">
                         </div>
                         <div class="project-card__titel">
@@ -129,7 +219,10 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/prime.jpg" alt="Аудио наушники" width="370" height="294">
+                            <img
+                            srcset="./images/portfolio/prime.jpg 1x,
+                            ./images/portfolio/prime-2x.jpg 2x"
+                            src="./images/portfolio/prime.jpg" alt="Аудио наушники" width="370" height="294">
                         </div>
                         <div class="project-card__titel">
                             <h2 class="project-card__name">Проект Prime</h2>
@@ -146,7 +239,10 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/box.jpg" alt="коробки"
+                            <img 
+                            srcset="./images/portfolio/box.jpg 1x,
+                            ./images/portfolio/box-2x.jpg 2x"
+                            src="./images/portfolio/box.jpg" alt="коробки"
                              width="370" height="294">
                         </div>
                         <div class="project-card__titel">
@@ -164,7 +260,11 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/inspiration.jpg" alt="терминал" width="370" height="294">
+                            <img 
+                            srcset="./images/portfolio/inspiration.jpg 1x,
+                            ./images/portfolio/inspiration-2x.jpg 2x"
+                            src="./images/portfolio/inspiration.jpg" alt="терминал" 
+                            width="370" height="294">
                         </div>
                         <div class="project-card__titel">
                             <h2 class="project-card__name">Inspiration has no Borders</h2>
@@ -181,7 +281,11 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/limited.jpg" alt="Книги" width="370" height="294">
+                            <img 
+                            srcset="./images/portfolio/limited.jpg 1x,
+                            ./images/portfolio/limited-2x.jpg 2x"
+                            src="./images/portfolio/limited.jpg" alt="Книги" 
+                            width="370" height="294">
                         </div>
                         <div class="project-card__titel">
                             <h2 class="project-card__name">Издание Limited Edition</h2>
@@ -198,7 +302,11 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/lab.jpg" alt="Бирка" width="370" height="294">
+                            <img 
+                             srcset="./images/portfolio/lab.jpg 1x,
+                            ./images/portfolio/lab-2x.jpg 2x"
+                            src="./images/portfolio/lab.jpg" alt="Бирка"
+                             width="370" height="294">
                         </div>
                         <div class="project-card__titel">
                             <h2 class="project-card__name">Проект LAB</h2>
@@ -215,7 +323,10 @@
                                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/business.jpg" alt="Бизнес"
+                            <img 
+                             srcset="./images/portfolio/business.jpg 1x,
+                            ./images/portfolio/business-2x.jpg 2x"
+                            src="./images/portfolio/business.jpg" alt="Бизнес"
                              width="370" height="294">
                           </div>
                           <div class="project-card__titel">
@@ -305,5 +416,6 @@
     
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
