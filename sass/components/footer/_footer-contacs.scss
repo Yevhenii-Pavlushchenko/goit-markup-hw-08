@@ -11,6 +11,13 @@
         }
    
 }
+@media (min-width:$desktop) {
+
+    .footer__contacts .contacts__item {
+       margin-right: 0px;
+
+    }
+}
 
 @media (max-width:$desktop) {
     

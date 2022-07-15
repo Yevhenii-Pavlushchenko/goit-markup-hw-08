@@ -1,13 +1,13 @@
 /*hero*/
 .hero {
     text-align: center;
-    height: 600px;
+    height: 400px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
         background-size: cover;
         background-position: center;
@@ -18,6 +18,12 @@
      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
             url('../images/title/hero-mobile.jpg');
 
+            @media (min-width:$desktop) {
+                height: 600px;
+                padding-top: 200px;
+                padding-bottom: 200px;
+                
+            }
 
        
 
@@ -67,8 +73,8 @@
  (min-resolution: 2dppx) {
      .hero {
          background-image:
-        inear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url('/images/title/hero-tablet.jpg');
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/title/hero-mobile-2x.jpg');
         
         }
 
@@ -78,8 +84,8 @@
  @media(min-width: 481px) {
      .hero {
          background-image:
-        inear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url('/images/title/hero-tablet.jpg');
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/title/hero-tablet.jpg');
      }
 
 
@@ -88,16 +94,16 @@
          (min-resolution: 2dppx) {
              .hero {
                  background-image:
-                inear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url('/images/title/hero-tablet-2x.jpg');
+                linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/title/hero-tablet-2x.jpg');
              }
          }
                 // герой на десктоп
                  @media(min-width: 768px) {
                      .hero {
                          background-image:
-                        inear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                         url('/images/title/hero-desktop.jpg');
+                        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url('../images/title/hero-desktop.jpg');
                      }
         
         
@@ -106,8 +112,8 @@
                      (min-resolution: 2dppx) {
                          .hero {
                              background-image:
-                            inear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                             url('/images/title/hero-desktop-2x.jpg');
+                            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                url('../images/title/hero-desktop-2x.jpg');
                          }
                      }
                  }

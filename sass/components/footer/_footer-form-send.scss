@@ -79,6 +79,22 @@
 
 @media (min-width:$desktop){
     .form-send {
-        margin-left: auto;
+        display: flex;
+    
+        margin-top: 0px;
+    }
+    .form-send__form{
+        display: flex;
+    }
+    .form-send__btn{
+      margin-top: 35px;
+      margin-left:12px;
+    }
+    .form-send__title{
+        display: flex;
+        text-align: start;
+    }
+    .form-send__input{
+        width: 358px;
     }
 }

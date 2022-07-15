@@ -1,51 +1,68 @@
  .clients {
+    
     &__list {
             display: flex;
            flex-wrap: wrap;
         justify-content: center;
         }
-        
-        @media (max-width:$before-desktop){
-            .clients{
-                &__list {
-                      gap: 30px;
-                    }    
+    &__item &__link:hover {
+                fill: var(--accent-color);
+                border-color: var(--accent-color);
             }
+        
+     &__item &__link:focus {
+                fill: var(--accent-color);
+                border-color: var(--accent-color);
+            }
+        
+     &__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                width: 210px;
+                height: 92px;
+        
+                fill: var(--bacground-icon-color);
+        
+                border: 1px solid var(--bacground-icon-color);
+                border-radius: 4px;
+        
+                transition: border-color 250ms var(--timing-function),
+                    fill 250ms var(--timing-function);
+            }
+        
+     
+         @media (max-width:$before-tablet) {
+              &__item {
+                        width: 210px;
+                    }
+                 }
+
+         @media (min-width:$tablet) {
+            &__item{
+                width: 226px;
+            }
+             &__link {
+                  width: 100%;
+                 }
+         }
+        @media (max-width:$before-desktop){
+                &__list {
+                      gap: 15px;
+                    }    
+            
         }
 
         @media (min-width:$desktop){
-            .clients{
                 &__item:not(:last-child) {
                         margin-right: 30px;
                     }
-            }
+                   &__item {
+                       width: 170px;
+                   }
         }
-    
-        &__item &__link:hover {
-            fill: var(--accent-color);
-            border-color: var(--accent-color);
-        }
-    
-        &__item &__link:focus {
-            fill: var(--accent-color);
-            border-color: var(--accent-color);
-        }
-    
-        &__link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            width: 170px;
-            height: 92px;
-    
-            fill: var(--bacground-icon-color);
-    
-            border: 1px solid var(--bacground-icon-color);
-            border-radius: 4px;
-    
-            transition: border-color 250ms var(--timing-function),
-                fill 250ms var(--timing-function);
-        }
-
- }
+}
+       
+ 
+ 
