@@ -268,6 +268,7 @@ address {
 /*Список*/
 @media (max-width: 767px) {
   .menu-mobile {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -832,7 +833,7 @@ address {
 }
 @media (max-width: 1199px) {
   .clients__list {
-    gap: 15px;
+    gap: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -922,7 +923,7 @@ address {
   gap: 30px;
 }
 .project-set__item {
-  width: 370px;
+  width: 100%;
 }
 .project-set__link {
   display: block;
@@ -1092,7 +1093,7 @@ address {
   width: 450px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .form {
     width: 528px;
   }

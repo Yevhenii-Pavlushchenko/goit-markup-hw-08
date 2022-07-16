@@ -1,6 +1,8 @@
 @media (max-width:$before-tablet){
     .navigation-mobile{
         display: flex;
+        
+
     }
         /*кнопка*/
     
@@ -29,6 +31,7 @@
      /*Список*/
          @media (max-width:$before-tablet) {
             .menu-mobile {
+                    z-index: 2;
                     position: fixed;
                     top: 0;
                     left: 0;
